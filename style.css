@@ -1,0 +1,130 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  nav {
+    width: 100%;
+    background-color: #5C5959;
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+  
+  .logo {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 34px;
+    color: #F77F00;
+  }
+  
+  .nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #F77F00;
+  }
+  
+  .nav-item:hover {
+    background-color:  rgb(206, 202, 202);
+  }
+  
+  .nav-item:hover a {
+    color: #F77F00;
+  }
+  .nav-links {
+    display: flex;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1{
+      padding: 200px;
+      text-align: center;
+
+  }
+  h3{
+      color:#F77F00;
+      text-align: center;
+  }
+  .accomodation{
+      background-image: url(assets/hotel-images/room4.jpg);
+      background-size: cover;
+      max-width:100%;
+      height: auto;
+
+  }
+  .ammenities{
+      position: relative;
+      background: #50423F;
+      color:white;
+      height: auto;
+  }
+  .ammenities li::before{
+      content: "\2022";
+      color: #F77F00;
+      padding: 2px;
+      font-weight: bold;
+      width: 1em;
+      margin-left: -1em;
+  }
+  #img-standard{
+      margin-right: 40px;
+      padding-right: 40px;
+  }
+  #standard{
+      margin-left: 40px;
+      padding-left: 40px;
+      border: 1px ridge rgb(197, 197, 197);
+  }
+  #deluxe{
+        border: 1px ridge rgb(197, 197, 197);
+  }
+  #img-presidential{
+    margin-right: 40px;
+    padding-right: 40px;
+}
+#presidential{
+    margin-left: 40px;
+    padding-left: 40px;
+    border: 1px ridge rgb(197, 197, 197);
+}
+button{
+    background:#F77F00;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+ footer {
+        background-color: #555;
+        color: #F77F00;
+      }
+  footer a {
+    text-decoration: none;
+    color: #F77F00;
+}  
+.ft-main {
+  display: flex;
+  flex-wrap: wrap;
+}
+  @media only screen and (min-width: 480px) {
+    .ft-main {
+        justify-content: space-around;
+    }
+  }
+  @media only screen and (min-width: 1200px ) {
+    .ft-main {
+        justify-content: space-evenly;
+    }
+  }
+  .ft-legal-list {
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+  }
