@@ -119,10 +119,6 @@ html {
 .col-md-4{
   margin: 30px;
 }
-.col-md-4 img{
-  max-width: 100%;
-  height: auto;
-}
 button{
     background:#F77F00;
     color: white;
@@ -144,12 +140,12 @@ button{
 }
   @media only screen and (min-width: 480px) {
     .ft-main {
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
   }
   @media only screen and (min-width: 1200px ) {
     .ft-main {
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
   }
   #text{
