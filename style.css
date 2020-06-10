@@ -63,6 +63,26 @@ html {
     top: 0;
     z-index: 999;
   }
+  
+.hero-image {
+  height: 23rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/hotel-images/room4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  font-size: 1.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
   h1{
       padding: 200px;
       text-align: center;
@@ -73,18 +93,13 @@ html {
       color:#F77F00;
       text-align: center;
   }
-  .accomodation{
-      background-image: url(assets/hotel-images/room4.jpg);
-      background-size: cover;
-      max-width:100%;
-      height: auto;
-
-  }
-  .ammenities{
+    .ammenities{
       position: relative;
       background: #50423F;
       color:white;
-      height: auto;
+      padding: 10px;
+      margin-bottom: 20px;
+    
   }
   .ammenities li::before{
       content: "\2022";
@@ -95,24 +110,23 @@ html {
       margin-left: -1em;
   }
   #img-standard{
-      margin-right: 40px;
-      padding-right: 40px;
+      margin-right: 60px;
   }
   #standard{
-      margin-left: 40px;
-      padding-left: 40px;
+      margin-left: 50px;
       border: 1px ridge rgb(197, 197, 197);
+  }
+  #img-deluxe{
+    margin-left:50px ;
   }
   #deluxe{
         border: 1px ridge rgb(197, 197, 197);
   }
   #img-presidential{
-    margin-right: 40px;
-    padding-right: 40px;
+    margin-right: 60px;
 }
 #presidential{
-    margin-left: 40px;
-    padding-left: 40px;
+    margin-left: 50px;
     border: 1px ridge rgb(197, 197, 197);
 }
 button{
@@ -164,4 +178,5 @@ button{
     width: 100%;
     text-align: center;
     background-color: #333;
+    margin: 0;
   }
