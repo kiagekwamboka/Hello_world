@@ -109,25 +109,18 @@ html {
       width: 1em;
       margin-left: -1em;
   }
-  #img-standard{
-      margin-right: 60px;
+  #standard, #deluxe, #presidential{
+    border: 1px ridge rgb(148, 147, 147);
   }
-  #standard{
-      margin-left: 50px;
-      border: 1px ridge rgb(197, 197, 197);
-  }
-  #img-deluxe{
-    margin-left:50px ;
-  }
-  #deluxe{
-        border: 1px ridge rgb(197, 197, 197);
-  }
-  #img-presidential{
-    margin-right: 60px;
+.row{
+  margin: 10px;
 }
-#presidential{
-    margin-left: 50px;
-    border: 1px ridge rgb(197, 197, 197);
+.col-md-4{
+  margin: 30px;
+}
+.col-md-4 img{
+  max-width: 100%;
+  height: auto;
 }
 button{
     background:#F77F00;
@@ -150,12 +143,12 @@ button{
 }
   @media only screen and (min-width: 480px) {
     .ft-main {
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
   }
   @media only screen and (min-width: 1200px ) {
     .ft-main {
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
   }
   #text{
