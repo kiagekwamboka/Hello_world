@@ -8,6 +8,14 @@ html {
     padding: 0;
     list-style: none;
   }
+  body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  #content{
+    flex: 1;
+  }
   nav {
     width: 100%;
     background-color: #5C5959;
@@ -20,6 +28,7 @@ html {
     text-decoration: none;
     font-size: 34px;
     color: #F77F00;
+    font-family: Pacifico;
   }
   
   .nav-item a {
@@ -32,7 +41,11 @@ html {
   .nav-item:hover {
     background-color:  rgb(206, 202, 202);
   }
-  
+  .logo:hover{
+    color: #F77F00;
+    background-color:  #5C5959;
+    text-decoration: none;
+  }
   .nav-item:hover a {
     color: #F77F00;
   }
@@ -44,9 +57,16 @@ html {
     justify-content: space-between;
     align-items: center;
   }
+  .navbar-fixed-top{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
   h1{
       padding: 200px;
       text-align: center;
+      color: white;
 
   }
   h3{
@@ -104,6 +124,7 @@ button{
  footer {
         background-color: #555;
         color: #F77F00;
+        bottom: 0;
       }
   footer a {
     text-decoration: none;
@@ -122,6 +143,22 @@ button{
     .ft-main {
         justify-content: space-evenly;
     }
+  }
+  #text{
+    font-family:Pacifico ;
+  }
+  #brandlogo{
+    position: relative;
+    display:inline-block;
+  }
+  #brandlogo #text{
+    position: absolute;
+    left:0;
+    right:0;
+    z-index: 999;
+    margin: 0,auto;
+    top: 40%;
+    text-align: center;
   }
   .ft-legal-list {
     width: 100%;
